@@ -1,0 +1,23 @@
+# Picolayer configuration — controls how the bot interacts with this repo.
+# Edit freely. Missing file → same defaults; invalid TOML → defaults + warning.
+
+# Master kill switch. Set to false to pause all Picolayer activity.
+enabled = true
+
+# Cap on concurrent open Picolayer PRs. Raise once you're comfortable with the output.
+max_prs_open = 1
+
+# Cap on open bot-filed issues in the backlog.
+max_open_issues = 3
+
+# Skip a re-survey if any Picolayer issue was created in the last N days.
+survey_cooldown_days = 7
+
+# Leave Picolayer PRs as draft so a human flips them ready-for-review.
+require_human_review = false
+
+# Allowed improvement types. Remove this line to allow every type.
+improvement_types = ["bug", "test", "refactor", "docs"]
+
+# Path prefixes Picolayer skips when reading the repo (prefix match, not globs).
+paths_excluded = ["vendor/"]
